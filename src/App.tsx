@@ -12,7 +12,7 @@ function App(): React.JSX.Element {
                 automatically reload.
             </p>
             <div>Jacob Chacko</div>
-            <div>Eagles</div>
+            <div>Hello World</div>
         </div>
     );
 }
