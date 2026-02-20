@@ -111,7 +111,7 @@ export function injectPositive(values: number[]): number[] {
     let sum = 0;
     let inserted = false;
 
-    values.forEach((v: number) => {
+    for (const v of values) {
         if (!inserted && v < 0) {
             result.push(v);
             result.push(sum);
@@ -121,7 +121,7 @@ export function injectPositive(values: number[]): number[] {
         }
 
         sum += v;
-    });
+    }
 
     if (!inserted) {
         result.push(sum);
